@@ -7,15 +7,31 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock </title>
 </head>
 
 <body>
-    <h1>World Clock</h1>
+    <div class="container">
+        <h1>World Clock</h1>
 
+        <select name="cityPicker" id="city-dropdown">
+            <option value="">Select A City</option>
+            <option value="">London</option>
+            <option value="">New York</option>
+            <option value="">Auckland</option>
+        </select>
 
+        <div class="city">
+            <h2>Los Angles</h2>
+            <div class="date"></div>
+            <div class="time"></div>
+        </div>
+    </div>
     <footer>
-        Coded by Suzanne Sharman. <a href="_blank">Open Source</a>
+        Coded by Suzanne Sharman. <a href="https://github.com/suzStar/worldClock">Open Source</a>
     </footer>
     <script src="src/index.js"></script>
 </body>
