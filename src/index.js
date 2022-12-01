@@ -44,14 +44,19 @@ function showCityData(event) {
         <h2>${cityName}</h2>
         <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm")} <small>${cityTime.format(
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
       "A"
     )}</small>
+     </div>`;
+  } else {
+    citiesElement.innerHTML = `
+    <div class="cityInfo">
      </div>`;
   }
 }
 updateTime();
 setInterval(updateTime, 1000);
+setInterval(showCityData, 1000);
 
 let citySelector = document.querySelector("#city-dropdown");
 citySelector.addEventListener("change", showCityData);
