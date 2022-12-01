@@ -32,11 +32,11 @@ select {
 
 .city {
     display: grid;
-    grid-template-columns: 445px 150px;
+    grid-template-columns: 400px 200px;
     grid-gap: 5px;
     align-items: center;
     padding: 5px 0;
-    border-bottom: 1.3px solid #4D4D4D;
+    border-bottom: 1.3px solid #4D4D4D40;
 }
 
 .city:last-child {
@@ -52,4 +52,8 @@ select {
     text-align: end;
     font-size: 36px;
     font-weight: bold;
+}
+
+small {
+    font-size: 20px;
 }

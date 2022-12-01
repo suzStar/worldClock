@@ -4,21 +4,27 @@ function updateTime() {
   let tokyoTime = moment().tz("Asia/Tokyo");
 
   tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
-  tokyoTimeElement.innerHTML = tokyoTime.format("h:mm [<small>]a[</small>]");
+  tokyoTimeElement.innerHTML = tokyoTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
 
   let sydneyDateElement = document.querySelector("#sydneyDate");
   let sydneyTimeElement = document.querySelector("#sydneyTime");
   let sydneyTime = moment().tz("Australia/Sydney");
 
   sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
-  sydneyTimeElement.innerHTML = sydneyTime.format("h:mm [<small>]a[</small>]");
+  sydneyTimeElement.innerHTML = sydneyTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
 
   let berlinDateElement = document.querySelector("#berlinDate");
   let berlinTimeElement = document.querySelector("#berlinTime");
   let berlinTime = moment().tz("Europe/Berlin");
 
   berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
-  berlinTimeElement.innerHTML = berlinTime.format("h:mm [<small>]a[</small>]");
+  berlinTimeElement.innerHTML = berlinTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function showCityData(event) {
